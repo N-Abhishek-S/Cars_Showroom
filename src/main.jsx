@@ -27,7 +27,7 @@ const router = createBrowserRouter(
     </Route>
   ),
   {
-    basename: '/Cars_Showroom', // ✅ This tells React Router about your GitHub Pages subfolder
+    basename: '/Cars_Showroom', 
   }
 );
 

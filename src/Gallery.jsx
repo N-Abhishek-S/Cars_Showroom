@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { FaCar, FaBars, FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { useState } from 'react';
+import {  FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Gallery = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState('all');
 
   const galleryItems = [
@@ -110,7 +109,7 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Footer */}
+ 
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row justify-between items-center">
           <p>&copy; 2025 Marsidi Car Show. All rights reserved.</p>
