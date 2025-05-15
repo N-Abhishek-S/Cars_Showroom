@@ -1,7 +1,12 @@
-// main.jsx or index.jsx
-import  { StrictMode } from 'react';
+// main.jsx
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from 'react-router-dom';
 
 import App from './App.jsx';
 import Home from './Home.jsx';
@@ -20,7 +25,10 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="gallery" element={<Gallery />} />
     </Route>
-  )
+  ),
+  {
+    basename: '/Cars_Showroom', // ✅ This tells React Router about your GitHub Pages subfolder
+  }
 );
 
 const root = createRoot(document.getElementById('root'));
