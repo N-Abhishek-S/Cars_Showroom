@@ -1,4 +1,5 @@
 import { FaTrophy, FaUserTie, FaShieldAlt } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,12 +17,12 @@ const Home = () => {
         <p className="text-xl md:text-2xl max-w-4xl mb-8 text-white animate-fadeInUp">
           Experience the pinnacle of luxury and performance at Marsidi Car Show
         </p>
-        <a
-          href="cars.html"
+        <NavLink
+          to="/cars"
           className="btn bg-red-500 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg shadow-red-500/40 hover:bg-red-600 hover:-translate-y-1 hover:shadow-xl hover:shadow-red-500/50 transition-all duration-300 animate-fadeIn"
         >
           Explore Collection
-        </a>
+        </NavLink>
       </section>
 
       {/* Main Content */}
