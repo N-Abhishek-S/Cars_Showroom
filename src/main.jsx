@@ -3,7 +3,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   RouterProvider,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
 } from 'react-router-dom';
@@ -16,7 +16,7 @@ import Contact from './Contact.jsx';
 import Gallery from './Gallery.jsx';
 import './index.css';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
@@ -27,7 +27,7 @@ const router = createBrowserRouter(
     </Route>
   ),
   {
-    basename: '/Cars_Showroom', 
+    basename: '/Cars_Showroom/'
   }
 );
 
